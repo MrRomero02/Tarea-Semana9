@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".AreaTrianguloFragment">
+
+    <!-- Campo de texto para la base -->
+    <EditText
+        android:id="@+id/et_base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Base del triángulo"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Campo de texto para la altura -->
+    <EditText
+        android:id="@+id/et_altura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Altura del triángulo"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Botón para calcular el área -->
+    <Button
+        android:id="@+id/btn_calcular_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular Área"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Texto donde se mostrará el resultado -->
+    <TextView
+        android:id="@+id/tv_resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Área: "
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="10dp"/>
+
+</LinearLayout>

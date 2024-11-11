@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".PrimalidadFragment">
+
+    <!-- Título del Fragmento -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Verificación de Primalidad"
+        android:textSize="20sp"
+        android:paddingBottom="20dp"/>
+
+    <!-- EditText para ingresar el número -->
+    <EditText
+        android:id="@+id/et_numero_primo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingresa un número"
+        android:inputType="number"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Botón para verificar si el número es primo -->
+    <Button
+        android:id="@+id/btn_verificar_primo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verificar Primalidad"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- TextView para mostrar el resultado de si es primo o no -->
+    <TextView
+        android:id="@+id/tv_resultado_primalidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text=""
+        android:textSize="16sp"/>
+
+</LinearLayout>

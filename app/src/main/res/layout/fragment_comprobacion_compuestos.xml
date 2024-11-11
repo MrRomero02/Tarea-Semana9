@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".ComprobacionCompuestosFragment">
+
+    <!-- Título del Fragmento -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Verificar Número Compuesto"
+        android:textSize="20sp"
+        android:paddingBottom="20dp"/>
+
+    <!-- EditText para que el usuario ingrese el número -->
+    <EditText
+        android:id="@+id/et_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingresa un número"
+        android:inputType="number"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Botón para ejecutar la comprobación -->
+    <Button
+        android:id="@+id/btn_check_composed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verificar Número Compuesto"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- TextView para mostrar el resultado -->
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text=""
+        android:textSize="16sp"/>
+
+</LinearLayout>
